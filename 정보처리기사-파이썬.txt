@@ -1,0 +1,19 @@
+정처기 실기 기출 - 파이썬
+
+list1 = [1,2,3,4,5]
+list2 = list1
+print(list1 == list2) # True
+list2.pop()
+print('list1',list1) # list2 [1, 2, 3, 4]
+print('list2',list2) # list2 [1, 2, 3, 4]
+print(list1 == list2) # True
+
+import copy
+list1 = [1,2,3,4,5]
+list2 = copy.deepcopy(list1)
+print(list1 == list2) #True
+list2.pop() 
+print('list1',list1) # llist1 [1, 2, 3, 4, 5]
+print('list2',list2) # list2 [1, 2, 3, 4]
+print(list1 == list2) # False
+
